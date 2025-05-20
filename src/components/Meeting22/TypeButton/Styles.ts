@@ -40,6 +40,8 @@ export const Twoto2 = styled.button<{ selected: boolean }>`
 
 export const Threeto3 = styled(Twoto2)``;
 
+export const Oneto1 = styled(Twoto2)``;
+
 export const Random = styled(Twoto2)``;
 
 export const lookComponent = styled.div`

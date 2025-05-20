@@ -21,7 +21,7 @@ export const BackContainer = styled.div`
 
 export const BackButton = styled(I.Back)`
   width: 9%;
-  height: 60%;
+  height: 100%;
   background: none;
   border: none;
   cursor: pointer;

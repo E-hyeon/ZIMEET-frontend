@@ -1,4 +1,5 @@
 export interface MyProfileType {
+    id: number;
     name: string;
     studentNumber: string;
     gender: string;

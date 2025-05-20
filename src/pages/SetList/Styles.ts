@@ -68,8 +68,6 @@ export const StageTitle = styled.div<{ $fontSize? : string}>`
   font-weight: bold;
   color: #ffffff;
   z-index: 1;
-  overflow-wrap: break-word;
-  word-break: break-word;
   white-space: pre-wrap;
 `;
 

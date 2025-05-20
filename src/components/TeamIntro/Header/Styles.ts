@@ -45,9 +45,9 @@ export const TeamNameContainer = styled.div`
 `;
 
 export const CertificationIcon = styled(Certification)`
-  height:80%;
-  width: 10%;
-  margin: 0 2% 1% 0;
+  height:100%;
+  width: 15%;
+  margin-right: 4%;
   @media (max-width: 768px) {
   @supports (-webkit-touch-callout: none) {
     height:56%;

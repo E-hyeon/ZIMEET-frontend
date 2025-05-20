@@ -42,7 +42,7 @@ const TypeButton: React.FC = () => {
         </S.TypeComponent>
         <S.TypeComponent>
           <S.FrontK onClick={() => handleClick('K')} selected={selectedSpace === 'K'}>
-            K관
+            K관/학관
           </S.FrontK>
         </S.TypeComponent>
         <S.TypeComponent>

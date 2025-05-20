@@ -1,8 +1,9 @@
 import { privateAxios } from '../axiosConfig';
 
 interface RefuseHiRequest {
-    toId: number;
-    fromId: number;
+    toId?: number;
+    fromId?: number;
+    type? : string;
 }
 
 const patchrefuseHi = async (data: RefuseHiRequest) => {

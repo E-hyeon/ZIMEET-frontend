@@ -9,7 +9,7 @@ interface TypeButtonProps {
 
 const TypeButton: React.FC<TypeButtonProps> = ({ setSelectedTeamType }) => {
     const location = useLocation();
-    const [selectedButton, setSelectedButton] = useState<string>('2to2');
+    const [selectedButton, setSelectedButton] = useState<string>('1to1');
 
     useEffect(() => {
         track('[접속]미팅_2대2');
@@ -25,7 +25,10 @@ const TypeButton: React.FC<TypeButtonProps> = ({ setSelectedTeamType }) => {
         } else if (button === '3to3') {
             track('[클릭]미팅_헤더_3대3버튼');
             track('[접속]미팅_3대3');
-        }
+        } else if (button === '1to1') {
+            track('[클릭]미팅_헤더_1대1버튼');
+            track('[접속]미팅_1대1');
+        } 
     };
 
     const handleRClick = () => {
@@ -39,20 +42,20 @@ const TypeButton: React.FC<TypeButtonProps> = ({ setSelectedTeamType }) => {
     return (
         <S.TypeLayout>
             <S.TypeComponent>
+                <S.Oneto1
+                    onClick={() => handleTypeChange('ONE_TO_ONE', '1to1', 1)}
+                    selected={selectedButton === '1to1'}
+                >
+                    1대1
+                </S.Oneto1>
+            </S.TypeComponent>
+            <S.TypeComponent>
                 <S.Twoto2
                     onClick={() => handleTypeChange('TWO_TO_TWO', '2to2', 2)}
                     selected={selectedButton === '2to2'}
                 >
                     2대2
                 </S.Twoto2>
-            </S.TypeComponent>
-            <S.TypeComponent>
-                <S.Threeto3
-                    onClick={() => handleTypeChange('THREE_TO_THREE', '3to3', 3)}
-                    selected={selectedButton === '3to3'}
-                >
-                    3대3
-                </S.Threeto3>
             </S.TypeComponent>
             <S.TypeComponent>
                 <S.Random

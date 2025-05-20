@@ -3,6 +3,7 @@ import { privateAxios } from '../axiosConfig';
 interface sendHiRequest {
     toId: number;
     fromId: number;
+    type?: string;
 }
 
 export const postsendHi = async (data: sendHiRequest) => {

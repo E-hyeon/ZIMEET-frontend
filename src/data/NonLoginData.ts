@@ -1,4 +1,116 @@
 
+export const NonLoginDataOneToOne = [
+  {
+    "userId": 1,
+    "emoji": "Bear",
+    "name": "박보영",
+    "verification": 1,
+    "major": "인문계열",
+    "age": 28,
+    "music": "KPOP"
+  },
+  {
+    "userId": 5,
+    "emoji": "DevWoman",
+    "name": "변우석",
+    "verification": 1,
+    "major": "철학",
+    "age": 27,
+    "music": "BALLAD"
+  },
+  {
+    "userId": 7,
+    "emoji": "Wolf",
+    "name": "김남일",
+    "verification": 1,
+    "major": "인문계열",
+    "age": 28,
+    "music": "KPOP"
+  },
+  {
+    "userId": 8,
+    "emoji": "Wolf",
+    "name": "김남이",
+    "verification": 1,
+    "major": "정통",
+    "age": 28,
+    "music": "KPOP"
+  },
+  {
+    "userId": 9,
+    "emoji": "Wolf",
+    "name": "도경수",
+    "verification": 1,
+    "major": "정통",
+    "age": 28,
+    "music": "KPOP"
+  },
+  {
+    "userId": 10,
+    "emoji": "Wolf",
+    "name": "카리나",
+    "verification": 1,
+    "major": "정통",
+    "age": 28,
+    "music": "KPOP"
+  },
+  {
+    "userId": 11,
+    "emoji": "Wolf",
+    "name": "김남오",
+    "verification": 1,
+    "major": "정통",
+    "age": 28,
+    "music": "KPOP"
+  },
+  {
+    "userId": 14,
+    "emoji": "Wolf",
+    "name": "김남팔",
+    "verification": 1,
+    "major": "정통",
+    "age": 28,
+    "music": "KPOP"
+  },
+  {
+    "userId": 29,
+    "emoji": "Bear",
+    "name": "남십삼",
+    "verification": 1,
+    "major": "인문계열",
+    "age": 28,
+    "music": "KPOP"
+  },
+  {
+    "userId": 31,
+    "emoji": "Bear",
+    "name": "남십오",
+    "verification": 1,
+    "major": "인문계열",
+    "age": 28,
+    "music": "KPOP"
+  },
+  {
+    "userId": 32,
+    "emoji": "Bear",
+    "name": "남십육",
+    "verification": 1,
+    "major": "인문계열",
+    "age": 28,
+    "music": "KPOP"
+  },
+  {
+    "userId": 34,
+    "emoji": "Bear",
+    "name": "남십팔",
+    "verification": 1,
+    "major": "인문계열",
+    "age": 24,
+    "music": "KPOP"
+  }
+];
+
+
 export const NonLoginDataTwoToTwo = [
   {
     "teamId": 8,

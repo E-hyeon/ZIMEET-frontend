@@ -24,6 +24,7 @@ import OurTeamIntro from './OurTeamIntro/OurTeamIntro';
 import Notion from './Notion/NotionMain';
 import UserDetail from './Chatting/UserDetail/ChatUserdetail';
 import SetList from './SetList/SetList';
+import Profile1to1 from './Meeting22/Profile1to1/Profile1to1';
 
 const Routers: React.FC = () => {
   return (
@@ -48,6 +49,7 @@ const Routers: React.FC = () => {
       <Route path="/sentHi" element={<SentHi />} />
       <Route path="/meeting22" element={<Meeting22 />} />
       <Route path="/teamMaking" element={<TeamMaking />} />
+      <Route path="/Profile1to1/:userId" element={<Profile1to1 />} />
       <Route path="/nonmember-Meeting" element={<Meeting />} />
       <Route path="/teamintro/:teamId" element={<TeamIntro />} />
       <Route path="/ourteamintro" element={<OurTeamIntro />} />

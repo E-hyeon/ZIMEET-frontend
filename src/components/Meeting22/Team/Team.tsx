@@ -3,7 +3,7 @@ import * as S from './Styles';
 import { TeamType } from '../../../recoilStores/type/Meeting/teamGallery';
 import { getImageByEmoji } from 'utils/IconMapper';
 import { useNavigate } from 'react-router-dom';
-import Toast from '../../../components/Meeting22/Toast/Toast';
+import Toast from '../Toast/TeamToast/Toast';
 import { mappingMusic } from '../../../data/SignUpData';
 import { track } from '@amplitude/analytics-browser';
 
@@ -22,8 +22,12 @@ const Team: React.FC<TeamProps> = ({ team, ourTeamData, teamType }) => {
   }
   
   const isVerified = team.verification === 1;
-  const majorDisplay = team.major.join('/');
-  
+
+  //전공이 배열인경우 구분자 추가
+  const majorDisplay = Array.isArray(team.major)
+  ? team.major.join('/') 
+  : team.major;
+
   const handleTeamClick = () => {
     if (!ourTeamData) {
       setIsToastOpen(true);

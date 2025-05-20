@@ -11,12 +11,12 @@ const ChattingInventory: React.FC = () => {
   }, []);
   return (
     <>
-    <S.ChattingInventoryLayout>
-      <S.ChattingInventoryTitle>팀 갤러리</S.ChattingInventoryTitle>
-      <ChattingInventoryTypeButton />
-      <Teams />
-    </S.ChattingInventoryLayout>
-    <NavigationBar />
+      <S.ChattingInventoryLayout>
+        <S.ChattingInventoryTitle>채팅</S.ChattingInventoryTitle>
+        <ChattingInventoryTypeButton />
+        <Teams />
+      </S.ChattingInventoryLayout>
+      <NavigationBar />
     </>
   );
 };

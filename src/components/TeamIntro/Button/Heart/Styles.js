@@ -35,6 +35,7 @@ export const HeartLayOut = styled.div`
 
 export const Hi = styled(hiIcon)`
   width: 8%;
+  height: 100%;
   margin-right: 1%;
 `;
 
